@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<body>
+    <header>
+        <h1>Explore India</h1>
+        <nav>
+            <ul>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#weather">Live Weather</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#travel-tips">Travel Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="explore">
+        <h2>Explore Destinations</h2>
+        
+    </section>
+
+    <section id="weather">
+        <h2>Live Weather</h2>
+        <div id="weather-info">Loading weather...</div>
+    </section>
+
+    <section id="hotels">
+        <h2>Recommended Hotels</h2>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+    </section>
+
+    <section id="travel-tips">
+        <h2>Travel Tips</h2>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 India Tourism</p>
+    </footer>
+</body>
+</html>
+
+</section>
+<section id="explore">
+<!-- Destination 2 -->
+        <div class="destination">
+            <img src="images/Images/goa.jpg" alt="Goa" class="destination-icon">
+            <h3>Goa</h3>
+            <p>Beaches and Relaxation</p>
+        </div>
+
+        <!-- Destination 3 -->
+        <div class="destination">
+            <img src="images/Images/Jaipur.images.jpg" alt="Jaipur" class="destination-icon">
+            <h3>Jaipur</h3>
+            <p>The Pink City</p>
+        </div>
+    </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tourism Website</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Top Destinations</h1>
+    <ul>
+        <% hotels.forEach(hotel => { %>
+            <li>
+                <h2><%= hotel.name %></h2>
+                <p><%= hotel.location %></p>
+                <img src="<%= hotel.image %>" alt="<%= hotel.name %>">
+                <p><%= hotel.description %></p>
+                <p>Price: $<%= hotel.price %></p>
+                <p>Rating: <%= hotel.rating %>/5</p>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
+
+
